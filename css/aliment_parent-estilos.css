@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* margin: 0;
+    padding: 0; */
+    /* font-family: Calibri, Verdana, Tahoma, sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imagenes/Frente.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contenedor{
+    width: 960px;
+    /* height: 500px; */
+    /* background-color: #b45c5c; */
+    background-color: #0072bc;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.486), 0 6px 20px 0 rgba(0, 0, 0, 0.486);
+}
+header{
+    background-color: #0072bc;
+}
+/* .ifmenu{
+    width: 100% !important;
+    height: 500px;
+} */
+/* nav{
+    padding-top: 7px;
+}
+.menu{
+    width: 750px;
+    height: 30px;
+    background-color: #0072bc;
+    float: left;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 10px;
+}
+.menu a:hover{
+    color: #0072bc;
+    background-color: #fff;
+} */
+.navegacion{
+    width: 750px;
+    height: 40px;
+    background-color: #0072bc;
+    float: left;
+    /* margin: 30px auto; */
+}
+.navegacion ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    position: relative;
+    display: inline-block;
+}
+.menu li a{
+    color: #fff;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #0072bc;
+    background-color: #fff;
+    transition: all .4s;
+}
+.submenu_productos{
+    position: absolute;
+    background-color: #0072bc;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.486), 0 6px 20px 0 rgba(0, 0, 0, 0.486);
+}
+.submenu_productos li a{
+    display: block;
+    width: 120px;
+}
+.menu li:hover .submenu_productos{
+    width: auto;
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+.redes_sociales{
+    width: 210px;
+    height: 37px;
+    background-color: #0072bc;
+    float: right;
+}
+.redes_sociales a{
+    text-decoration: none;
+}
+.redes_sociales img{
+    padding: 0px 10px;
+    margin-top: 15px;
+    width: 15px;
+}
+.redes_sociales img:hover{
+    width: 20px;
+    margin-top: 5px;
+    padding: 0px 8px;
+    transform: rotate(4deg) scale(1) skew(1deg) translate(0px);
+}
+/* .banner{
+    margin: 0;
+    padding: 0;
+} */
+.banner img{
+    width: 100%;
+}
+.articulo{
+    /* background-color: aqua; */
+    width: auto;
+}
+.titulo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 5px;
+    /* color: #fff; */
+    color: #0072bc;
+    background-color: #fff;
+    text-shadow: 4px 2px 10px #0d0d0e;
+    text-align: center;
+    border-radius: 5px;
+}
+.producto{
+    display: flex;
+    flex: row wrap;
+    margin: 15px 5px;
+    padding: 5px;
+    /* background-color: #bc3500; */
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:#fff;
+}
+.impar{
+    flex-direction: row;
+}
+.par{
+    flex-direction: row-reverse;
+}
+.foto{
+    /* background-color: #0072bc; */
+    width: 480px;
+}
+.foto img{
+    /* display: flex; */
+    width: 100%;
+    border-radius: 10px;
+}
+.descripcion{
+    width: 470px;
+    /* background-color: brown; */
+}
+.descripcion h2{
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 4px 10px #0d0d0e;
+    text-align: center;
+}
+.descripcion h3{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    /* text-align: center; */
+}
+.descripcion p{
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    text-align: justify;
+}
+footer{
+    display: flex;
+    flex: row wrap;
+}
+.pie{
+    height: 70px;
+    background-color: #fff;
+}
+.pie img{
+    /* height: 10vh; */
+    height: 70px;
+    margin-left: 20px;
+    float: left;
+}
+.copyright{
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: #0072bc;
+    background-color: #fff;
+    float: right;
+}
+.sitios_de_interes{
+    width: 40%;
+    background-color: #fff;
+}
+.nav_sitios ul{
+    list-style-type: none;
+}
+.nav_sitios li{
+    margin-top: 4px;
+}
+.nav_sitios ul li a{
+    text-decoration: none;
+    color: #0072bc;
+}
+
+@media handheld, screen and (min-width: 600px) and (max-width: 1023px){
+    .contenedor{
+        /* width: 580px; */
+        width: 80%;
+    }
+    .navegacion{
+        width: 80%;
+        height: auto;
+    }
+    .menu li a{
+        padding: 10px 5px;
+    }
+    .redes_sociales{
+        width: 20%;
+        height: auto;
+    }
+    .redes_sociales img{
+        padding: 0px 5px;
+    }
+    .descripcion h2{
+        font-size: 25px;
+    }
+    .descripcion h3{
+        font-size: 17px;
+    }
+    .descripcion p{
+        font-size: 13px;
+    }
+    .pie{
+        height: auto;
+    }
+    .copyright{
+        width: 40%;
+    }
+    .sitios_de_interes{
+        width: 60%;
+    }
+}
+
+@media handheld, screen and (max-width: 599px){
+    .contenedor{
+        width: 80%;
+    }
+    .navegacion{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+    }
+    .menu li:hover .submenu_productos{
+        position: relative;
+    }
+    .submenu_productos{
+        background-color: #52b2f3;
+    }
+    .submenu_productos li a{
+        width: auto;
+        text-align: center;
+    }
+    .redes_sociales{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .descripcion{
+        visibility: hidden;
+    }
+    .foto{
+        width: 100%;
+    }
+    .foto img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .descripcion{
+        width: 0px;
+        height: 0px;
+    }
+    .pie{
+        height: auto;
+        background-color: #fff;
+    }
+    .pie img{
+        /* height: 10vh; */
+        height: 70px;
+        margin-left: 20px;
+        float: left;
+    }
+    .copyright{
+        width: 30%;
+        padding-top: 0px;
+        padding-left: 10px;
+        font-size: 0.7em;
+        color: #0072bc;
+        background-color: #fff;
+        float: right;
+    }
+    .sitios_de_interes{
+        width: 70%;
+        font-size: 0.7em;
+        background-color: #fff;
+    }
+    .nav_sitios ul{
+        list-style-type: none;
+    }
+    .nav_sitios li{
+        margin-top: 4px;
+    }
+    .nav_sitios ul li a{
+        text-decoration: none;
+        color: #0072bc;
+    }
+}
